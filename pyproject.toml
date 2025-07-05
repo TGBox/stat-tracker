@@ -1,0 +1,47 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mein-life-tracker"
+version = "0.1.0"
+description = "Ein persönlicher Life-Tracker zur Erfassung und Analyse verschiedener Datenpunkte."
+readme = "README.md" # Optional: Wenn du eine README.md Datei hast
+authors = [{ name = "Dein Name", email = "deine.email@example.com" }]
+license = { text = "MIT" } # Oder eine andere Lizenz, falls zutreffend
+requires-python = ">=3.9" # Mindestversion von Python
+keywords = ["life-tracking", "data-analysis", "personal-dashboard"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Utilities",
+]
+
+dependencies = [
+    "requests", # Für API-Anfragen (Wetter, Feiertage, Pollenflug)
+    # "Flask", # Optional: Wenn du den IFTTT-Webserver implementierst
+    # "pygetwindow", # Optional: Wenn du die aktive Fensterüberwachung nutzt
+    # "pandas", # Optional: Für Datenanalyse und -verarbeitung
+    # "matplotlib", # Optional: Für Visualisierung
+    # "numpy", # Optional: Für numerische Operationen mit pandas
+    # "schedule", # Optional: Für zeitgesteuerte Aufgaben
+]
+
+[project.urls]
+Homepage = "https://github.com/dein-github-name/mein-life-tracker" # Optional: Dein GitHub Repo
+"Bug Tracker" = "https://github.com/dein-github-name/mein-life-tracker/issues" # Optional
+
+[tool.setuptools.packages.find]
+where = ["."] # Sucht Pakete im aktuellen Verzeichnis
+include = ["mein_life_tracker", "mein_life_tracker.*"] # Oder spezifischer: ["modules"]
+namespaces = false # Keine Namespace-Pakete
+
+# Wenn du das Projekt als installierbares Paket verpacken möchtest,
+# musst du möglicherweise auch eine __init__.py in dein Hauptverzeichnis legen
+# und die Ordnerstruktur anpassen, z.B. mein-life-tracker/mein_life_tracker/modules/
+# Für ein einfaches Skript, das direkt ausgeführt wird, ist dies optional.

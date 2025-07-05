@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+mein_life_tracker.egg-info/PKG-INFO
+mein_life_tracker.egg-info/SOURCES.txt
+mein_life_tracker.egg-info/dependency_links.txt
+mein_life_tracker.egg-info/requires.txt
+mein_life_tracker.egg-info/top_level.txt

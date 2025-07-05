@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: mein-life-tracker
+Version: 0.1.0
+Summary: Ein persönlicher Life-Tracker zur Erfassung und Analyse verschiedener Datenpunkte.
+Author-email: Dein Name <deine.email@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/dein-github-name/mein-life-tracker
+Project-URL: Bug Tracker, https://github.com/dein-github-name/mein-life-tracker/issues
+Keywords: life-tracking,data-analysis,personal-dashboard
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: requests

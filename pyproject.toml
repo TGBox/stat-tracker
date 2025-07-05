@@ -6,12 +6,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "stat-tracker"
-version = "0.1.0"
+version = "1.0.0"
 description = "Ein persönlicher Life-Tracker zur Erfassung und Analyse verschiedener Datenpunkte."
 readme = "README.md"
 authors = [{ name = "Daniel Rösch", email = "daniel.roesch91@gmail.com" }]
 requires-python = ">=3.9" # Mindestversion von Python
 keywords = [
+    "stat",
     "tracker",
     "python",
     "statistics",
@@ -36,6 +37,7 @@ dependencies = [
     # "matplotlib", # Optional: Für Visualisierung
     # "numpy", # Optional: Für numerische Operationen mit pandas
     # "schedule", # Optional: Für zeitgesteuerte Aufgaben
+    "pytest",
 ]
 
 [project.scripts]
@@ -43,24 +45,22 @@ dependencies = [
 # 'run-tracker' ist der Befehl, den du im Terminal eingeben wirst.
 # 'main:main' bedeutet, dass die 'main'-Funktion aus dem Modul 'main' aufgerufen wird.
 # Damit dies funktioniert, muss 'main.py' als Teil eines Python-Pakets installiert sein.
-# Beispiel: Wenn dein Projektordner 'mein_life_tracker' heißt und 'main.py' darin liegt,
-# dann wäre der Eintrag 'mein_life_tracker.main:main'.
+# Beispiel: Wenn dein Projektordner 'stat_tracker' heißt und 'main.py' darin liegt,
+# dann wäre der Eintrag 'stat_tracker.main:main'.
 # Da dein 'main.py' aktuell im Wurzelverzeichnis liegt, ist dies eine hypothetische
 # Definition für den Fall, dass du dein Projekt später als Paket strukturierst.
 run-tracker = "main:main"
 
-#todo: Finish!
-
 [project.urls]
-Homepage = "https://github.com/dein-github-name/mein-life-tracker" # Optional: Dein GitHub Repo
-"Bug Tracker" = "https://github.com/dein-github-name/mein-life-tracker/issues" # Optional
+Homepage = "https://github.com/TGBox/stat-tracker.git"
+"Bug Tracker" = "https://github.com/TGBox/stat-tracker/issues"
 
 [tool.setuptools.packages.find]
 where = ["."] # Sucht Pakete im aktuellen Verzeichnis
-include = ["mein_life_tracker", "mein_life_tracker.*"] # Oder spezifischer: ["modules"]
+include = ["stat_tracker", "stat_tracker.*"] # Oder spezifischer: ["modules"]
 namespaces = false # Keine Namespace-Pakete
 
 # Wenn du das Projekt als installierbares Paket verpacken möchtest,
 # musst du möglicherweise auch eine __init__.py in dein Hauptverzeichnis legen
-# und die Ordnerstruktur anpassen, z.B. mein-life-tracker/mein_life_tracker/modules/
+# und die Ordnerstruktur anpassen, z.B. stat_tracker/stat_tracker/modules/
 # Für ein einfaches Skript, das direkt ausgeführt wird, ist dies optional.
